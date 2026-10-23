@@ -38,7 +38,7 @@ export function Education() {
             <p className="mb-5 font-mono text-xs uppercase tracking-[0.3em] text-primary">Soft skills</p>
             <div className="flex flex-wrap gap-3">
               {softSkills.map((s, i) => {
-                const I = softIcons[i];
+                const I = softIcons[i] ?? MessageSquare;
                 return (
                   <span key={s} className="group inline-flex items-center gap-2 rounded-full border border-border px-4 py-2.5 text-sm transition-all hover:-translate-y-0.5 hover:border-primary/50">
                     <I className="h-4 w-4 text-muted-foreground transition-colors group-hover:text-primary" /> {s}

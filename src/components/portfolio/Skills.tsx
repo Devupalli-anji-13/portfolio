@@ -18,7 +18,7 @@ export function Skills() {
         <SectionHeading eyebrow="Skills" title="My Technical Arsenal." />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((g, i) => {
-            const Icon = icons[i];
+            const Icon = icons[i] ?? Code2;
             return (
               <Reveal key={g.title} delay={i * 0.06}>
                 <div
