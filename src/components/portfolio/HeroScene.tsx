@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, Float, Lightformer, MeshTransmissionMaterial, Text } from "@react-three/drei";
+import { Environment, Float, Lightformer, MeshTransmissionMaterial } from "@react-three/drei";
 import { useMemo, useRef } from "react";
 import * as THREE from "three";
 
@@ -98,9 +98,6 @@ function Core({ mobile }: { mobile: boolean }) {
           <icosahedronGeometry args={[1, 1]} />
           <meshBasicMaterial color={CYAN} wireframe transparent opacity={0.25} />
         </mesh>
-        <Text position={[-1.9, 1.1, 0.4]} fontSize={0.22} color={CYAN} anchorX="center">{"</>"}</Text>
-        <Text position={[1.95, -0.9, 0.3]} fontSize={0.2} color={VIOLET} anchorX="center">{"{ }"}</Text>
-        <Text position={[1.6, 1.5, -0.4]} fontSize={0.14} color="#9CA3AF" anchorX="center">def build():</Text>
       </Float>
       <Ring radius={2.0} tilt={[1.2, 0.2, 0]} speed={0.5} color={CYAN} />
       <Ring radius={2.35} tilt={[1.9, -0.5, 0.3]} speed={-0.35} color={VIOLET} />
